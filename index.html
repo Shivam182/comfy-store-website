@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comfy Store Project</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar">
+        <div class="nav-center">
+
+            <!--navbar elements-->
+            <div>
+                <button class="toggle-nav">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links">
+                    <li>
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="products.html" class="nav-link">products</a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="nav-link">about</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--logo-->
+            <img src="./images/logo-white.svg" alt="logo navbar" class="nav-logo">
+            
+            <!--cart icon: toggle button-->
+            <div class="toggle-container">
+                <button class="toggle-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </button>
+                <span class="cart-item-count">1</span>
+            </div>
+        </div>
+    </nav>
+
+    <!--below navbar introduction section-->
+    <section class="hero">
+        <div class="hero-container"><h1 class="text-slanted">rest, relax, unwind</h1>
+        <h3>Embrace your choices - we do</h3>
+        <a href="products.html" class="hero-btn">shop now</a>
+        </div>
+    </section>
+
+    <!--side bar-->
+    <div class="sidebar-overlay">
+        <aside class="sidebar">
+            <!--close button-->
+            <button class="sidebar-close">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <!--sidebar links -->
+            <ul class="sidebar-links">
+                <li>
+                    <a href="index.html" class="sidebar-link"><i class="fas fa-home"></i>home</a>
+                    
+                </li>
+                <li>
+                    <a href="about.html" class="sidebar-link"><i class="fas fa-couch"></i>about</a>
+                    
+                </li>
+                <li>
+                    <a href="about.html" class="sidebar-link"><i class="fas fa-book"></i>about</a>
+                    
+                </li>
+            </ul>
+        </aside>
+    </div>
+
+    <!--cart design-->
+    <div class="cart-overlay">
+        <aside class="cart">
+            <button class="cart-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <header>
+                <h3 class="text-slanted">your bag</h3>
+            </header>
+            <!--cart items-->
+            <div class="cart-items"></div>
+            <!--footer of cart sidebar-->
+            <footer>
+                <h3 class="cart-total">total : $12.889</h3>
+                <button class="cart-checkout btn">checkout</button>
+            </footer>
+        </aside>
+    </div>
+
+    <!--featured products-->
+    <section class="section featured">
+        <div class="title">
+            <h2><span>/</span>featured</h2>
+        </div>
+
+        <div class="featured-center section-center">
+            <h2 class="section-loading">
+                loading......
+            </h2>
+
+            <!-- single product: we'ill add it dynamically from javascript -->
+            <!--end of single product-->
+
+
+        </div>
+
+        <!--end button to show all products list-->
+    <a href="products.html" class="btn">all products</a>
+    </section>
+</body>
+</html>
