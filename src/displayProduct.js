@@ -1,9 +1,7 @@
-import { formatPrice } from './utils.js';
-import { addToCart } from './cart/setupCart.js';
-
+import { formatPrice } from "./util.js";
+import { addToCart } from "./cart/setup.js";
 
 const display = (products, element, filters) => {
-    
   // display products
   element.innerHTML = products
     .map((product) => {
@@ -27,13 +25,13 @@ const display = (products, element, filters) => {
           </footer>
         </article> `;
     })
-    .join('');
+    .join("");
 
   if (filters) return;
 
-  element.addEventListener('click', function (e) {
+  element.addEventListener("click", function (e) {
     const parent = e.target.parentElement;
-    if (parent.classList.contains('product-cart-btn')) {
+    if (parent.classList.contains("product-cart-btn")) {
       addToCart(parent.dataset.id);
     }
   });
